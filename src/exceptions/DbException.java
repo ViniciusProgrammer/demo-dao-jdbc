@@ -1,4 +1,7 @@
 package exceptions;
 
-public class DbException {
+public class DbException extends RuntimeException {
+    public DbException(String mensagem) {
+        super(mensagem);
+    }
 }
