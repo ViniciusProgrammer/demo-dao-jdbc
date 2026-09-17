@@ -70,6 +70,11 @@ public class VendedorDaoJDBC implements VendedorDAO {
         return List.of();
     }
 
+    @Override
+    public List<Vendedor> findByDepartament(Departamento departamento) {
+        return List.of();
+    }
+
     private Departamento instanciarDepartamento(ResultSet resultSet) throws SQLException {
        Departamento departamento = new Departamento();
 
