@@ -29,5 +29,12 @@ public class Program {
         for (Vendedor vendedor : vendedores) {
             System.out.println(vendedor);
         }
+
+        System.out.println("test 03 seller findByAll");
+        vendedores = vendedorDAO.findAll();
+
+        for (Vendedor vendedor : vendedores) {
+            System.out.println(vendedor);
+        }
     }
 }
