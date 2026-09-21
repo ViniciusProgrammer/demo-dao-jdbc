@@ -36,5 +36,11 @@ public class Program {
         for (Vendedor vendedor : vendedores) {
             System.out.println(vendedor);
         }
+
+        System.out.println("test 04 seller Insert");
+        Vendedor vendedor2 = new Vendedor(null, "Greg", "greg@gmail.com", new Date(), 4000.0, departamento1);
+
+        vendedorDAO.insert(vendedor2);
+        System.out.println(vendedor2.getId());
     }
 }
